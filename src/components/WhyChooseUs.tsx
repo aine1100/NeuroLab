@@ -19,7 +19,7 @@ export default function WhyUs() {
     ];
     const cardContent = [
         {
-            icon: "💖",
+            icon: "📸",
             title: "Get free consultation",
             descriptions: "lorem ipsum dolor sit amet, consectetur adipis ",
             width:"18rem",
