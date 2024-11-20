@@ -1,4 +1,4 @@
-import Card from './C   '
+import Card from './Card'
 export default function WhyUs(){
     const numbers = [
         {
@@ -51,8 +51,20 @@ export default function WhyUs(){
                     </div>
                     <div className=" flex gap-5">
                         <div className="flex flex-col gap-5">
+                            {
+                                cardContent.slice(0,2).map((item, index) => (
+                                    <Card key={index} icon={item.icon} title={item.title} description={item.descriptions} />
+                                ))
+                            }
 
                         </div>
+                        {
+                            cardContent.slice(2).map((item, index) => (
+                                <Card key={index} icon={item.icon} title={item.title} description={item.descriptions} />
+                            ))
+                         }
+                        
+                    
                     </div>
 
                    
