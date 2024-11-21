@@ -1,32 +1,31 @@
-import imageOne from "/hero.png";
 
 const DoctorSection = () => {
   const doctors = [
     {
       name: "Dr. Joseph Drew",
       specialization: "Cardiologist",
-      image: imageOne,
+      
     },
     {
       name: "Dr. Joseph Drew",
       specialization: "Cardiologist",
-      image: imageOne,
+     
     },
     {
       name: "Dr. Joseph Drew",
       specialization: "Cardiologist",
-      image: imageOne,
+     
     },
     {
       name: "Dr. Joseph Drew",
       specialization: "Cardiologist",
-      image: imageOne,
+      
     }
     ,
     {
       name: "Dr. Joseph Drew",
       specialization: "Cardiologist",
-      image: imageOne,
+      
     },
   ];
 
@@ -39,7 +38,7 @@ const DoctorSection = () => {
           {doctors.map((doctor, index) => (
             <div
               key={index}
-              className="flex flex-col items-center text-center bg-white shadow-md rounded-lg p-6"
+              className="flex flex-col items-center text-center bg-white shadow- rounded-lg p-6"
             >
               <div className="h-cover w-cover  overflow-hidden mb-4">
                 <img

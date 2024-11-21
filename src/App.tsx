@@ -4,8 +4,7 @@ import ServicesSection from "./components/ServicesSection";
  import WhyUs from "./components/WhyChooseUs";
 import DoctorsSection from "./components/DoctorsSection";
 import TestimonialsSection from "./components/TestimonialsSection";
-// import FAQSection from "./components/FAQSection";
-// import AppointmentForm from "./components/AppointmentForm";
+
 
 const App: React.FC = () => {
   return (
@@ -16,8 +15,7 @@ const App: React.FC = () => {
       <WhyUs />
       <DoctorsSection />
       <TestimonialsSection />
-      {/* <FAQSection />
-      <AppointmentForm /> */}
+      
     </div>
   );
 };
