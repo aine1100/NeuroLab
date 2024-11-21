@@ -46,7 +46,7 @@ export default function WhyUs() {
         <section className="">
             <div className="container mx-auto text-center flex items-center justify-center gap-44">
                 <div className="flex flex-col gap-20">
-                    <h2 className="text-4xl font-bold text-gray-800 ">Why Choose Our <br />clinic</h2>
+                    <h2 className="text-4xl font-bold text-gray-800 ">Why Choose Neuro <br />Lab</h2>
                     <p className='text-sm text-gray-500 md:w-[500px]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quam laudantium dolore assumenda temporibus enim itaque? Vero sint neque, incidunt fugit assumenda minima dolorum quo veniam, officiis reprehenderit repellendus voluptatum.</p>
                     <div className="grid grid-cols-1 md:grid-cols-2  gap-10">
                         {numbers.map((item, index) => (

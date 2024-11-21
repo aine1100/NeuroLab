@@ -2,8 +2,8 @@ import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import ServicesSection from "./components/ServicesSection";
  import WhyUs from "./components/WhyChooseUs";
-// import DoctorsSection from "./components/DoctorsSection";
-// import TestimonialsSection from "./components/TestimonialsSection";
+import DoctorsSection from "./components/DoctorsSection";
+import TestimonialsSection from "./components/TestimonialsSection";
 // import FAQSection from "./components/FAQSection";
 // import AppointmentForm from "./components/AppointmentForm";
 
@@ -14,9 +14,9 @@ const App: React.FC = () => {
       <HeroSection />
       <ServicesSection />
       <WhyUs />
-      {/* <DoctorsSection />
+      <DoctorsSection />
       <TestimonialsSection />
-      <FAQSection />
+      {/* <FAQSection />
       <AppointmentForm /> */}
     </div>
   );

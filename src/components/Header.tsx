@@ -1,5 +1,17 @@
+import React, { useState, useEffect } from "react";
 
 const Header: React.FC = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const tabs = [
     { name: "Home", path: "#" },
     { name: "About Us", path: "#about" },
@@ -9,7 +21,13 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <nav className="py-4 bg-white h-[4rem] shadow-md">
+    <nav
+      className={`py-4 h-[4rem] shadow-md sticky top-0 transition-all duration-300 z-50 ${
+        isScrolled
+          ? "bg-white bg-opacity-70 backdrop-blur-md"
+          : "bg-transparent"
+      }`}
+    >
       <div className="container mx-auto flex justify-between items-center">
         <h1 className="text-[20px] px-6 font-bold text-blue-500">NeuroLab</h1>
 
