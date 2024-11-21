@@ -33,7 +33,7 @@ const DoctorSection = () => {
     <div className="py-16">
       <div className="container mx-auto flex flex-col items-center gap-10">
         <h2 className="text-4xl text-gray-800 font-bold">Meet Our Team</h2>
-        <p className="w-[40rem] text-center text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil suscipit ipsam repudiandae delectus assumenda pariatur harum dolorum impedit earum placeat, reiciendis nam ab. Fuga ratione aspernatur aperiam rem distinctio?</p>
+        <p className="w-[40rem] text-center text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil suscipit ipsam repudiandae delectus assumenda pariatur harum dolorum impedit earum placeat, reiciendis nam ab. Fuga ratione aspernatur aperiam rem distinctio?</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 justify-center gap-10">
           {doctors.map((doctor, index) => (
             <div

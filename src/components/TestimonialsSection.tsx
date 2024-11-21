@@ -17,14 +17,12 @@ const TestimonialsSection = () => {
   return (
     <section className="py-16 ">
       <div className="container mx-auto flex flex-col gap-10 items-center">
-        {/* Section Title */}
         <h2 className="text-4xl text-gray-800 font-bold">Testimonials</h2>
         <p className="max-w-2xl text-center text-gray-600">
           See what our clients have to say about our services and their
           experience with us.
         </p>
 
-        {/* Testimonials Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full px-6 md:px-0">
           {testimonials.map((testimonial, index) => (
             <div

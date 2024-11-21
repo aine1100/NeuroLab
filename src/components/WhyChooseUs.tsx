@@ -44,7 +44,7 @@ export default function WhyUs() {
 
     return (
         <section className="">
-            <div className="container mx-auto text-center flex items-center justify-center gap-44">
+            <div className="container mx-auto text-center flex flex-wrap items-center justify-center gap-10 lg:gap-44">
                 <div className="flex flex-col gap-20">
                     <h2 className="text-4xl font-bold text-gray-800 ">Why Choose Neuro <br />Lab</h2>
                     <p className='text-sm text-gray-500 md:w-[500px]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quam laudantium dolore assumenda temporibus enim itaque? Vero sint neque, incidunt fugit assumenda minima dolorum quo veniam, officiis reprehenderit repellendus voluptatum.</p>
