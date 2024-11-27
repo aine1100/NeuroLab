@@ -3,7 +3,7 @@ import Button from "./Button";
 const HeroSection: React.FC = () => {
   return (
     <section
-      className="bg-blue-50 py-16 h-screen w-auto"
+      className="bg-blue-50 py-16 px-10 h-screen w-auto"
       style={{
         backgroundImage: "url('/hero.png')",
         backgroundSize: "cover",

@@ -15,7 +15,7 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="py-16 ">
+    <section className="py-16 px-10 ">
       <div className="container mx-auto flex flex-col gap-10 items-center">
         <h2 className="text-4xl text-gray-800 font-bold">Testimonials</h2>
         <p className="max-w-2xl text-center text-gray-600">

@@ -2,35 +2,35 @@
 const DoctorSection = () => {
   const doctors = [
     {
-      name: "Dr. Joseph Drew",
-      specialization: "Cardiologist",
+      name: "Asimwe Landry",
+      specialization: "Founder and Ceo",
       
     },
     {
-      name: "Dr. Joseph Drew",
-      specialization: "Cardiologist",
+      name: "Dushimire Aine",
+      specialization: "Web and Mobile Developer",
      
     },
     {
-      name: "Dr. Joseph Drew",
-      specialization: "Cardiologist",
+      name: "Mugisha Prosper",
+      specialization: "Data analyst and Backend Developer",
      
     },
     {
-      name: "Dr. Joseph Drew",
-      specialization: "Cardiologist",
+      name: "Uhirwe Esther Hope",
+      specialization: "Frontend Developer ",
       
     }
     ,
     {
-      name: "Dr. Joseph Drew",
-      specialization: "Cardiologist",
+      name: "Atumanyire Winy",
+      specialization: "Market research analyzer",
       
     },
   ];
 
   return (
-    <div className="py-16">
+    <div className="py-16 px-10">
       <div className="container mx-auto flex flex-col items-center gap-10">
         <h2 className="text-4xl text-gray-800 font-bold">Meet Our Team</h2>
         <p className="w-[40rem] text-center text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nihil suscipit ipsam repudiandae delectus assumenda pariatur harum dolorum impedit earum placeat, reiciendis nam ab. Fuga ratione aspernatur aperiam rem distinctio?</p>

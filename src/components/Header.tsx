@@ -28,8 +28,8 @@ const Header: React.FC = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-[20px] px-6 font-bold text-blue-500">NeuroLab</h1>
+      <div className="container mx-auto flex justify-between items-center px-10">
+        <h1 className="text-[20px]  font-bold text-blue-500">NeuroLab</h1>
 
         <ul className="flex space-x-6 -ml-[20rem]">
           {tabs.map((tab, index) => (
