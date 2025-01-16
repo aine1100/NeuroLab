@@ -2,13 +2,13 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       name: "John Doe",
-      company: "ABC Health",
+      company: "King Faisal Hospital",
       review:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in libero id lectus ultricies faucibus. Nulla facilisi. Sed vel felis at nunc viverra faucibus. Maecenas sed arcu vel sapien ultricies ultricies.",
     },
     {
       name: "Jane Smith",
-      company: "XYZ Wellness",
+      company: "Kanombe Hospital",
       review:
         "Sed vel felis at nunc viverra faucibus. Maecenas sed arcu vel sapien ultricies ultricies. Nulla facilisi. Sed in libero id lectus ultricies faucibus.",
     },

@@ -3,9 +3,9 @@ import Card from "./Card";
 const ServicesSection: React.FC = () => {
   const services = [
     { title: "EEG Data Management", description: "Upload, retrieve, and process EEG data efficiently, enabling seamless integration with patient profiles.", icon: "🧠" },
-    { title: "Patient Profile Management", description: "Create, update, and manage patient profiles with ease, ensuring accurate and secure record-keeping.", icon: "🧠" },
-    { title: "Real-Time Monitoring and Visualization", description: "Access real-time EEG monitoring dashboards and graphical visualizations to track brainwave trends effectively.", icon: "🧠" },
-    { title: "AI-Powered Diagnosis", description: "Benefit from advanced AI models trained on EEG data to support accurate diagnoses and future predictions.", icon: "🧠" },
+    { title: "Patient Profile Management", description: "Create, update, and manage patient profiles with ease, ensuring accurate and secure record-keeping.", icon: "🧑‍⚕️" },
+    { title: "Real-Time Monitoring and Visualization", description: "Access real-time EEG monitoring dashboards and graphical visualizations to track brainwave trends effectively.", icon: "📈" },
+    { title: "AI-Powered Diagnosis", description: "Benefit from advanced AI models trained on EEG data to support accurate diagnoses and future predictions.", icon: "🤖" },
   ];
 
   return (

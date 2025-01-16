@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeTab, setActiveTab] = useState<string>("");
+
+  // Sections for IntersectionObserver
+  const sections = ["home", "about", "services", "team", "contact"];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -12,11 +16,39 @@ const Header: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.5, // Trigger when 50% of the section is in view
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveTab(entry.target.id); // Update activeTab when section is in view
+          }
+        });
+      },
+      observerOptions
+    );
+
+    sections.forEach((sectionId) => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        observer.observe(section);
+      }
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   const tabs = [
-    { name: "Home", path: "#" },
+    { name: "Home", path: "#home" },
     { name: "About Us", path: "#about" },
     { name: "Services", path: "#services" },
-    { name: "Doctors", path: "#doctors" },
+    { name: "Team", path: "#team" },
     { name: "Contact", path: "#contact" },
   ];
 
@@ -29,14 +61,16 @@ const Header: React.FC = () => {
       }`}
     >
       <div className="container mx-auto flex justify-between items-center px-10">
-        <h1 className="text-[20px]  font-bold text-blue-500">NeuroLab</h1>
+        <h1 className="text-[20px] font-bold text-blue-500">NeuroLab</h1>
 
         <ul className="flex space-x-6 -ml-[20rem]">
           {tabs.map((tab, index) => (
             <li key={index}>
               <a
                 href={tab.path}
-                className="text-gray-600 hover:text-blue-500 transition-colors"
+                className={`${
+                  activeTab === tab.path.slice(1) ? "text-blue-500" : "text-gray-600"
+                } hover:text-blue-500 transition-colors`}
               >
                 {tab.name}
               </a>

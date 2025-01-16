@@ -10,15 +10,16 @@ const HeroSection: React.FC = () => {
         backgroundPosition: "center",
       }}
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto lg:mt-10">
         <div className="grid grid-cols-1 gap-8 text-left">
           <h2 className="text-[50px] font-bold w-[25rem] text-gray-800">
-            Complete Health Care Solution for Everyone
+          Healthy Minds, Strong society
           </h2>
-          <p className="text-gray-600 text-2xl w-auto lg:w-[55rem]">
+          <p className="text-gray-600 text-2xl w-auto lg:w-[50rem]">
+          Track your Mental Health Status with ease
             Providing comprehensive and compassionate care for you and your loved ones. Together, let’s create a healthier tomorrow.
           </p>
-          <Button text="Book Now" className="w-[200px] h-[50px]" />
+          <Button text="Get Started" className="w-[200px] h-[50px]" />
         </div>
       </div>
     </section>
