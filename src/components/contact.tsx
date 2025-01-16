@@ -1,12 +1,8 @@
 import {   FaMailBulk, FaPhone } from "react-icons/fa";
-import { useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 
 export default function Contact() {
-    const [isActive, setActive] = useState(0);
-    function HandleActive() {
-        setActive(isActive === 0 ? 1 : 0);
-    }
+
     const contact = [
         {
             icon: <FaLocationDot />,
