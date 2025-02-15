@@ -7,7 +7,7 @@ export default function ProjectPage() {
   
     const tools = [
       {
-        image: "/eeg.png",
+        image: "/eeg.webp",
         title: "Eeg HeadBand",
         desc: "This is a headband used for eeg recording",
         price: "$100",
@@ -27,7 +27,7 @@ export default function ProjectPage() {
       <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow mx-auto py-4 px-10 container flex flex-col gap-10 items-start justify-center">
-          <div className="flex gap-5 items-center -mt-20 justify-center">
+          <div className="flex gap-5 items-center -mt-10 justify-center">
             <h1 className="text-xl font-semibold  text-gray-800">Our Products</h1>
           </div>
           <div className="flex">
